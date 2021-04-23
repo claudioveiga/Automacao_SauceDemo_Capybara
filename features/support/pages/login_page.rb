@@ -1,4 +1,4 @@
-class LoginPage < SitePrism::Page
+class LoginPage < BasePage
 
     element :input_login, '#user-name'
     element :input_senha, '#password'
@@ -9,7 +9,7 @@ class LoginPage < SitePrism::Page
     element :info_senha, 'div.login_password'
     
     def doLogin(login, senha)
-        input_nome.set nome
+        input_login.set nome
         input_senha.set senha
         # btn_logar.click
         click_button("LOGIN")
