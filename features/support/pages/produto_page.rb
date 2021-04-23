@@ -1,3 +1,5 @@
+require_relative "./base_page.rb"
+
 class ProdutoPage < BasePage
 
     element :ABC1, '#aaa'

@@ -1,3 +1,5 @@
+require_relative "./base_page.rb"
+
 class LoginPage < BasePage
 
     element :input_login, '#user-name'
