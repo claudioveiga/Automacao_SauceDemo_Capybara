@@ -4,7 +4,7 @@
 
             Como: um possível comprador
             Quero: validar as funcionalidades da pagina de Produto
-            Para: para verificar a assertividade dos itens de Produto
+            Para: verificar a assertividade dos itens de Produto
 
             Contexto: Acessando a página SauceDemo
             Quando acessar a página SauceDemo
