@@ -16,12 +16,14 @@
 
             @prod_2_itens
             Esquema do Cenario: Validar os dados dos itens da página de produto
-            Então os seguintes <produtos> serão validados
-            E o precos <precos> de cada um são
+            Então o valor do card daquele link <link> será validado
+            E o valor da descrição do card daquele link <descricao> será validado
+            E o valor do preço do card daquele link <preco> será validado
+            E o valor do botão do card daquele link <botao> será validado
             Exemplos:
-            | produtos                | precos   |
-            | "Sauce Labs Backpack"   | "$29.99" |
-            | "Sauce Labs Bike Light" | "$9.99"  |
+            | link                      | descricao                 | preco     | botao         |
+            | "Sauce Labs Backpack"     | "streamlined Sly Pack"    | "$29.99"  | "ADD TO CART" | 
+            | "Sauce Labs Bike Light"   | "helps when riding"       | "$9.99"   | "ADD TO CART" |
 
             @prod_validando_filtros
             Esquema do Cenario: Validar o funcionamento dos filtros

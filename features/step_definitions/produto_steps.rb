@@ -1,5 +1,6 @@
 Então('faremos a validação da página de produtos') do
     expect(page).to have_content('Products')
+    binding.pry
 end
 
 Então('os seguintes {string} serão validados') do |string|
