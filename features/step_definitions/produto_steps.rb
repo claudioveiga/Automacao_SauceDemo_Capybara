@@ -1,24 +1,24 @@
-Então('faremos a validação da página de produtos') do
-    expect(page).to have_content('Products')
-    binding.pry
-end
+Então('o valor do card daquele link {string} será validado') do |link|
+    @produto.cardItemAndOption(link, "link")
+  end
+  
+  Então('o valor da descrição do card daquele link {string} será validado') do |link|
+    @produto.cardItemAndOption(link, "descricao")
+  end
+  
+  Então('o valor do preço do card daquele link {string} será validado') do |link|
+    @produto.cardItemAndOption(link, "preco")
+  end
+  
+  Então('o valor do botão do card daquele link {string} será validado') do |link|
+    @produto.cardItemAndOption(link, "botao")
+  end
+  
+  Quando('clico e opto pelo filtro {string}') do |filtroEscolhido|
+    @produto.filterSelect(filtroEscolhido)
+  end
+  
+  Entao('o primeiro produto será {string}') do |item|
+    expect(@produto.link_firstItem.text).to have_content(item)
+  end
 
-Então('os seguintes {string} serão validados') do |string|
-    pending # Write code here that turns the phrase above into concrete actions
-end
-  
-Então('o precos {string} de cada um são') do |string|
-    pending # Write code here that turns the phrase above into concrete actions
-end
-  
-Quando('clico no botão de filtros') do
-    pending # Write code here that turns the phrase above into concrete actions
-end
-  
-Quando('opto pelo filtro {string}') do |string|
-    pending # Write code here that turns the phrase above into concrete actions
-end
-  
-Entao('o primeiro produto será {string}') do |string|
-    pending # Write code here that turns the phrase above into concrete actions
-end

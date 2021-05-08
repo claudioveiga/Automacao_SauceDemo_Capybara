@@ -15,7 +15,7 @@
             @login_certo
             Cenario: Login correto
             Quando efetuar o login com o usuário "standard_user"
-            Então o seguinte texto estará na página "Products"
+            Então o seguinte texto estará na página "PRODUCTS"
 
             Cenario: Login errado
             Quando efetuar o login com a senha errada
@@ -26,8 +26,8 @@
             Então o seguinte texto estará na página <mensagem>
             Exemplos:
             | usuario                   | mensagem                                              |
-            | "standard_user"           | "Products"                                            |
+            | "standard_user"           | "PRODUCTS"                                            |
             | "locked_out_user"         | "Epic sadface: Sorry, this user has been locked out." |
-            | "performance_glitch_user" | "Products"                                            |
-            | "problem_user"            | "Products"                                            |
+            | "performance_glitch_user" | "PRODUCTS"                                            |
+            | "problem_user"            | "PRODUCTS"                                            |
 

@@ -12,7 +12,7 @@
 
             @prod_titulo
             Cenario: Validando a página de Produto
-            Então faremos a validação da página de produtos
+            Então o seguinte texto estará na página "PRODUCTS"
 
             @prod_2_itens
             Esquema do Cenario: Validar os dados dos itens da página de produto
@@ -27,8 +27,7 @@
 
             @prod_validando_filtros
             Esquema do Cenario: Validar o funcionamento dos filtros
-            Quando clico no botão de filtros
-            E opto pelo filtro <filtroEscolhido>
+            Quando clico e opto pelo filtro <filtroEscolhido>
             Entao o primeiro produto será <item>
             Exemplos:
             | filtroEscolhido       | item                                |

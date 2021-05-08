@@ -3,18 +3,19 @@ require_relative "./base_page.rb"
 class LoginPage < BasePage
 
     element :input_login, '#user-name'
-    element :input_senha, '#password'
-    element :btn_logar, '#login-button'
-    element :text_alerta, 'h3[data-test="error"]'
+    element :input_password, '#password'
+    element :btn_login, '#login-button'
+    element :text_alert, 'h3[data-test="error"]'
 
     element :info_login, '#login_credentials'
-    element :info_senha, 'div.login_password'
+    element :info_password, 'div.login_password'
     
-    def doLogin(login, senha)
-        input_login.set nome
-        input_senha.set senha
-        # btn_logar.click
-        click_button("LOGIN")
+    def doLogin(userName, userPassword)
+        #binding.pry
+        input_login.set userName
+        input_password.set userPassword
+        # btn_login.click
+        click_button("Login")
     end
 
     def go

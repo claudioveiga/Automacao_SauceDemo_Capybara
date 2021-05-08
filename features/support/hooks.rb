@@ -2,7 +2,7 @@ Before do
 
     # @base = BasePage.new
     @login = LoginPage.new
-    # @produto = ProdutoPage.new
+    @produto = ProdutoPage.new
 
 end
 
