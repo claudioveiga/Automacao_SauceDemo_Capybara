@@ -32,17 +32,16 @@ class ProdutoPage < BasePage
 
         case filterName
             when "Name (A to Z)"
-                click_on("Name (A to Z)")
-                Select "Name (A to Z)", from "Name (A to Z)"
+                page.find('[value="az"]').click()
             
             when "Name (Z to A)"
-                click_on("Name (Z to A)")
+                page.find('[value="za"]').click()
 
             when "Price (low to high)"
-                click_on("Price (low to high)")
+                page.find('[value="lohi"]').click()
 
             when "Price (high to low)"
-                click_on("Price (high to low)")
+                page.find('[value="hilo"]').click()
             
             else 
                 #select 'Brasil', from: 'Países'
@@ -55,5 +54,9 @@ class ProdutoPage < BasePage
     end
   
 end
+
+
+
+
 
 
