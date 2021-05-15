@@ -18,10 +18,7 @@ E valido a informação da descrição <descricao>
 E valido a informação do preço <preco>
 E valido a informação do botão <botao> 
 Quando volto para a tela de Produto
-Então o valor do card daquele link <link> será validado
-E o valor da descrição do card daquele link <descricao> será validado
-E o valor do preço do card daquele link <preco> será validado
-E o valor do botão do card daquele link <botao> será validado
+Então os valores do link: <link>, descrição: <descricao>, preço: <preco> e botão: <botao> serão validados
 Exemplos:
 | nome                      | descricao                 | preco     | botao         |
 | "Sauce Labs Backpack"     | "streamlined Sly Pack"    | "$29.99"  | "ADD TO CART" | 
